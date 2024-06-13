@@ -1,0 +1,49 @@
+.all-catalog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  &__title {
+    color: #3d351d;
+    font-size: 35px;
+    font-family: "Montserrat";
+    line-height: 1.55;
+    font-weight: 500;
+    letter-spacing: -0.8px;
+    text-transform: uppercase;
+  }
+
+  &__arrow-image {
+    background-image: url('../../../../frontend/assets/icons/arrowhandraw.svg');
+    width: 77px;
+    height: 26px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__circle-image {
+    background-image: url('../../../../frontend/assets/icons/circlehandraw.svg');
+    width: 204px;
+    height: 111px;
+    position: relative;
+  }
+
+  &__label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #3d351d;
+    font-size: 35px;
+    font-family: "Montserrat";
+    line-height: 1.55;
+    font-weight: 500;
+    letter-spacing: -0.8px;
+    text-transform: uppercase;
+  }
+  &__label:hover {
+     text-decoration: underline;
+  }
+}

@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" href="./assets/icons/icons.png" />
+    <link rel="stylesheet" href="./styles/index.css" />
+
+    <title>ECOsha</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="ticker">
+        <div class="swiper swiper-text">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide__text">
+              Бесплатная доставка от 3000₽
+            </div>
+            <div class="swiper-slide swiper-slide__text">
+              Скидка -30% всем новым клиентам
+            </div>
+            <div class="swiper-slide swiper-slide__text">Оплачивай долями</div>
+            <div class="swiper-slide swiper-slide__text">
+              Скидка -10% при оплате онлайн
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- блок с ссылками на каталог и тд -->
+      <nav class="menu">
+        <div class="menu__wrapper wrapper">
+          <!-- logo -->
+          <div class="logo">
+            <a href="./index.html">
+              <img class="logo__image" src="./assets/img/logo-5.png" alt="logo"
+            /></a>
+          </div>
+          <!-- ссылки главная каталог блог и тд -->
+          <div class="navbar">
+            <ul class="navbar__container">
+              <!-- главная -->
+              <li class="navbar__item">
+                <span class="navbar__item-text">
+                  <a href="./index.html" class="navbar__item-link_main"
+                    >Главная</a
+                  >
+                </span>
+              </li>
+              <!-- каталог -->
+              <li class="navbar__item">
+                <div class="navbar__item-catalog">
+                  <span class="navbar__item-text">
+                    <a href="./catalog.html" class="navbar__item-link_catalog"
+                      >Каталог</a
+                    >
+                    <i class="navbar__item-icon"></i>
+                  </span>
+                  <!-- выпадающее меню каталога -->
+                  <div class="dropdown">
+                    <div class="wrapper">
+                      <div class="dropdown__content">
+                        <!-- Первая колонка (для дома+одежда) -->
+                        <div class="dropdown__content-column">
+                          <!-- Товары для дома -->
+                          <div class="dropdown__content-list">
+                            <a href="" class="dropdown__content-name">
+                              Товары для дома
+                            </a>
+                            <div class="dropdown__content-links">
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/image.png"
+                              >
+                                Постельное белье
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/dishes.webp"
+                              >
+                                Посуда
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/basket.webp"
+                              >
+                                Плетенные корзины
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/pillow.webp"
+                                >Подушки + покрывало
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/towels.webp"
+                              >
+                                Полотенца + коврики
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/pillow.webp"
+                              >
+                                Посмотреть всё
+                                <i class="dropdown__content-icon"></i>
+                              </a>
+                            </div>
+                          </div>
+                          <!-- Одежда -->
+                          <div class="dropdown__content-list">
+                            <a href="" class="dropdown__content-name">Одежда</a>
+                            <div class="dropdown__content-links">
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/socks.webp"
+                              >
+                                Носки
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/t-short.webp"
+                              >
+                                Футболки и топы
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/sweter.webp"
+                              >
+                                Вязаные изделия
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/homeСothes.webp"
+                              >
+                                Одежда для дома
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/sweter.webp"
+                              >
+                                Посмотреть всё
+                                <i class="dropdown__content-icon"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Вторая колонка (аксессуары+косметика) -->
+                        <div class="dropdown__content-column">
+                          <!-- Аксессуары -->
+                          <div class="dropdown__content-list">
+                            <a href="" class="dropdown__content-name"
+                              >Аксессуары</a
+                            >
+                            <div class="dropdown__content-links">
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/earrings.webp"
+                              >
+                                Серьги
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/bags.webp"
+                              >
+                                Сумки
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/bracelet.jpg"
+                              >
+                                Браслеты
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/necklace.webp"
+                              >
+                                Ожерелья
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/hairAccessories.webp"
+                              >
+                                Аксессуары для волос
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/bags.webp"
+                              >
+                                Посмотреть всё
+                                <i class="dropdown__content-icon"></i>
+                              </a>
+                            </div>
+                          </div>
+                          <!-- Уходовая косметика -->
+                          <div class="dropdown__content-list">
+                            <a href="" class="dropdown__content-name"
+                              >Забота о себе</a
+                            >
+                            <div class="dropdown__content-links">
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/soap.jpeg"
+                              >
+                                Мыло ручной работы
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/scrab.jpeg"
+                                >Уход для тела
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/shampo.webp"
+                              >
+                                Уход для волос
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/scrab.jpeg"
+                              >
+                                Посмотреть всё
+                                <i class="dropdown__content-icon"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Третья колонка (мелоч+инфа) -->
+                        <div class="dropdown__content-column">
+                          <!-- Мелочи -->
+                          <div class="dropdown__content-list">
+                            <a href="" class="dropdown__content-name"
+                              >По мелочи</a
+                            >
+                            <div class="dropdown__content-links">
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/disk.jpeg"
+                              >
+                                Хлопковые диски
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/salfetka.jpeg"
+                                >Восковые салфетки
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/stakan.png"
+                              >
+                                Бутылки + термокружки
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/fruict.jpeg"
+                              >
+                                Фруктовки
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/avoska.jpeg"
+                              >
+                                Шопперы + авоськи
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/avoska.jpeg"
+                              >
+                                Посмотреть всё
+                                <i class="dropdown__content-icon"></i>
+                              </a>
+                            </div>
+                          </div>
+                          <!-- Акции -->
+                          <div class="dropdown__content-list">
+                            <a href="" class="dropdown__content-name"
+                              >Сертификаты</a
+                            >
+                            <a href="" class="dropdown__content-name"
+                              >Новинки</a
+                            >
+                            <a href="" class="dropdown__content-name"
+                              >Распродажа</a
+                            >
+                            <a href="" class="dropdown__content-name">Акции</a>
+                          </div>
+                        </div>
+                        <!-- Четвертая колонка (фото) -->
+                        <div
+                          class="dropdown__content-column dropdown__content-img-container"
+                        >
+                          <img
+                            class="dropdown__content-img"
+                            src="./assets/img/imgForSidebar/vase.webp"
+                            alt=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- Доставка и оплата -->
+              <li class="navbar__item">
+                <span class="navbar__item-text">
+                  <a href="./delivery.html" class="navbar__item-link_delivery">
+                    Доставка и оплата</a
+                  >
+                </span>
+              </li>
+              <!-- Блог -->
+              <li class="navbar__item">
+                <span class="navbar__item-text">
+                  <a href="./blog.html" class="navbar__item-link_blog">Блог</a>
+                </span>
+              </li>
+              <!-- Покупателям -->
+              <li class="navbar__item">
+                <div class="navbar__item-catalog">
+                  <a href="./buyers.html"
+                    ><span class="navbar__item-text"> Контакты </span></a
+                  >
+
+                  <!-- выпадающее меню покупателям -->
+                  <!-- <div class="dropdown">
+                    <div class="wrapper">
+                      <div class="dropdown__content-customer">
+                        <div class="dropdown__content-column">
+                          <div class="dropdown__content-list">
+                            <a href="" class="dropdown__content-name">
+                              О компании
+                            </a>
+                            <div class="dropdown__content-links">
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/image.png"
+                              >
+                                Адреса магазинов
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/dishes.webp"
+                              >
+                                Программа лояльности
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/towels.webp"
+                              >
+                                Вопросы-ответы
+                              </a>
+
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/pillow.webp"
+                              >
+                                Реквизиты
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dropdown__content-column">
+                          <div class="dropdown__content-list">
+                            <a href="" class="dropdown__content-name"
+                              >Сообщества ECOsha</a
+                            >
+                            <div class="dropdown__content-links">
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/earrings.webp"
+                              >
+                                Telegram
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/bags.webp"
+                              >
+                                VK
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/bracelet.jpg"
+                              >
+                                Написать в WhatsApp
+                              </a>
+                              <a
+                                href=""
+                                class="dropdown__content-link"
+                                data-src-image="./assets/img/imgForSidebar/necklace.webp"
+                              >
+                                Написать в Telegram
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- иконки в header -->
+          <div class="secondary-links">
+            <div class="secondary-links__search">
+              <i class="secondary-links__icon secondary-links__icon-search"></i>
+            </div>
+            <div class="secondary-links__tel">
+              <i class="secondary-links__icon secondary-links__icon-tel"></i>
+            </div>
+            <div class="secondary-links__face">
+              <i class="secondary-links__icon secondary-links__icon-face"></i>
+              <div class="auth">
+                <!-- вход -->
+                <div class="auth__block authorize" id="authorize">
+                  <div class="auth__block-container">
+                    <div class="auth__close">
+                      <i class="auth__close-icon"></i>
+                    </div>
+                    <h3 class="auth__title">Мой кабинет</h3>
+                    <div class="auth-form">
+                      <form action="" class="auth-form__form authorize-form">
+                        <div class="auth-form__input-section">
+                          <div class="auth-form__input-conteiner">
+                            <div class="auth-form__icon-conteiner">
+                              <i
+                                class="auth-form__icon auth-form__name-icon"
+                              ></i>
+                            </div>
+                            <input
+                              class="auth-form__input authorize-input-name"
+                              type="text"
+                              placeholder="Имя"
+                            />
+                          </div>
+                          <span
+                            class="err-message err-message-nameLogin"
+                          ></span>
+                        </div>
+                        <div class="auth-form__input-section">
+                          <div class="auth-form__input-conteiner">
+                            <div class="auth-form__icon-conteiner">
+                              <i
+                                class="auth-form__icon auth-form__passw-icon"
+                              ></i>
+                            </div>
+                            <input
+                              class="auth-form__input authorize-input-passw"
+                              type="password"
+                              placeholder="Пароль"
+                            />
+                          </div>
+                          <span
+                            class="err-message err-message-passwLogin"
+                          ></span>
+                        </div>
+                        <div class="auth-form__other"></div>
+                        <button class="auth-form__btn authorize-btn">
+                          Войти
+                        </button>
+                      </form>
+                      <div
+                        class="tabBtn auth-form__register"
+                        data-popup="registration"
+                      >
+                        У меня нет аккаунта
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- регистрация -->
+                <div class="auth__block registration" id="registration">
+                  <div class="auth__block-container">
+                    <div class="auth__close">
+                      <i class="auth__close-icon"></i>
+                    </div>
+                    <h3 class="auth__title">Регистрация</h3>
+                    <div class="auth-form">
+                      <form action="" class="auth-form__form registration-form">
+                        <div class="auth-form__input-section">
+                          <div class="auth-form__input-conteiner">
+                            <div class="auth-form__icon-conteiner">
+                              <i
+                                class="auth-form__icon auth-form__name-icon"
+                              ></i>
+                            </div>
+                            <input
+                              class="auth-form__input registration-input-name"
+                              type="text"
+                              placeholder="Имя"
+                            />
+                          </div>
+                          <span class="err-message err-message-name"></span>
+                        </div>
+                        <div class="auth-form__input-section">
+                          <div class="auth-form__input-conteiner">
+                            <div class="auth-form__icon-conteiner">
+                              <i
+                                class="auth-form__icon auth-form__passw-icon"
+                              ></i>
+                            </div>
+                            <input
+                              class="auth-form__input registration-input-passw"
+                              type="password"
+                              placeholder="Пароль"
+                            />
+                          </div>
+                          <span class="err-message err-message-passw"></span>
+                        </div>
+                        <button class="auth-form__btn registration-btn">
+                          Зарегистрироваться
+                        </button>
+                      </form>
+                      <div
+                        class="tabBtn auth__link-accaunt"
+                        data-popup="authorize"
+                      >
+                        У меня уже есть аккаунт
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- аккаунт -->
+                <div class="auth__block account" id="account">
+                  <div class="auth__block-container">
+                    <div class="auth__close">
+                      <i class="auth__close-icon"></i>
+                    </div>
+                    <h3 class="auth__title account-name"></h3>
+                    <p class="auth__line"></p>
+                    <div class="accaunt-links">
+                      <a href="" class="accaunt-links__link">Мои заказы</a>
+                      <a href="./shoppingCart.html" class="accaunt-links__link"
+                        >Моя корзина</a
+                      >
+                      <a href="" class="accaunt-links__link accaunt-exit"
+                        >Выйти</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="secondary-links__like">
+              <a href="./favoritesProduct.html">
+                <i class="secondary-links__icon secondary-links__icon-like"></i
+              ></a>
+            </div>
+            <div class="secondary-links__basket">
+              <a href="./shoppingCart.html">
+                <i
+                  class="secondary-links__icon secondary-links__icon-basket"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="blogBahil">
+      <div class="blogBahil__conent-img">
+        <div class="blogBahil__image-container">
+          <img
+            class="blogBahil__image"
+            src="./assets/img/img-blog/blog-soap.jpeg"
+            alt=""
+          />
+          <h1 class="blogBahil__label">
+            Твердый шампунь - это мыло за 500 рублей?
+          </h1>
+        </div>
+        <br /><br />
+      </div>
+      <div class="blogBahil__wrapper">
+        <div class="blogBahil__content">
+          <br /><br />
+          <h3 class="blogBahil__content_title">
+            Когда речь заходит о твёрдом шампуне, первые мысли: «Он ведь
+            выглядит как мыло! Хоть чем-то от него отличается?»
+          </h3>
+          <br /><br />
+          <p class="blogBahil__content_text">
+            Отвечаем:<br /><br />
+
+            Во-первых, такой вид ухода сохраняет все функции жидкого. То есть
+            твёрдый шампунь – это тот же жидкий, из которого убрали воду!
+            Расходуется даже дольше и не хуже адаптируется по составу под разные
+            типы кожи головы и волос.<br /><br />
+
+            Кстати, речь идёт не только о шампуне! В твёрдом виде есть кремы,
+            дезодоранты, гели для умывания, кондиционеры для тела и бальзамы для
+            волос.<br /><br />
+
+            Во-вторых, твёрдая косметика сохраняет всё самое удобное от мыла:
+            компактный формат, долговременный расход и возможность не
+            использовать консерванты при производстве (будьте осторожны, не все
+            производители отказываются от консервантов).
+          </p>
+          <br /><br />
+
+          <h3 class="blogBahil__content_title">
+            Помимо «мыльных плюсов», уход в плитках имеет преимущества перед
+            жидкими продуктами
+          </h3>
+          <br /><br />
+          <div class="blog-soap__content">
+            <div class="blog-soap__img-container">
+              <div class="blog-soap__img"></div>
+            </div>
+
+            <div class="blog-soap__text">
+              <h4 class="blog-soap__title">Они компактнее</h4>
+              <p class="blog-soap__subtitle">
+                Бутылёк жидкого шампуня привычного объёма весит около 400
+                граммов – в 8 раз больше твёрдого! И служит такая плитка, весом
+                50 граммов, даже дольше. Кстати, об этом…
+              </p>
+            </div>
+          </div>
+          <div class="blog-soap__content">
+            <div class="blog-soap__img-container">
+              <div class="blog-soap__img"></div>
+            </div>
+
+            <div class="blog-soap__text">
+              <h4 class="blog-soap__title">Расходуются дольше</h4>
+              <p class="blog-soap__subtitle">
+                Несмотря на небольшой размер, твёрдая косметика может служить
+                месяцами! Абсолютный рекордсмен у нас – кондиционер для волос.
+                Эта плитка может не заканчиваться 4-5 месяцев! А шампунь обычно
+                живёт 1,5-2 месяца даже при условии ежедневного использования
+              </p>
+            </div>
+          </div>
+          <div class="blog-soap__content">
+            <div class="blog-soap__img-container">
+              <div class="blog-soap__img"></div>
+            </div>
+
+            <div class="blog-soap__text">
+              <h4 class="blog-soap__title">
+                Идеальны для спортзала, бассейна и ручной клади
+              </h4>
+              <p class="blog-soap__subtitle">
+                Твёрдая косметика не займёт много места в сумке, не добавит ей
+                много веса и не потребует переливания по маленьким бутылькам
+                перед поездкой. Взять, положить в мыльницу, поехать – и всё.
+                Главное, не забывайте открывать крышку мыльницы по возвращении,
+                чтобы плитка просыхала!
+              </p>
+            </div>
+          </div>
+          <div class="blog-soap__content">
+            <div class="blog-soap__img-container">
+              <div class="blog-soap__img"></div>
+            </div>
+
+            <div class="blog-soap__text">
+              <h4 class="blog-soap__title">Экологичнее</h4>
+              <p class="blog-soap__subtitle">
+                На самом деле, для нас это основной плюс. Плиткам не нужна
+                пластиковая упаковка, и на фоне ежегодных 120 миллиардов единиц
+                бутыльков из пластика, которые производят для бьюти-индустрии,
+                их бумажная обёртка выглядит более безобидной
+              </p>
+            </div>
+          </div>
+          <figure class="blogBahil__content_figure">
+            <img
+              class="blogBahil__content_image"
+              src="./assets/img/img-blog/blog-soap-2.jpeg"
+              alt=""
+            />
+            <figcaption class="blogBahil__content_figcaption">
+              Пудра для умывания, мыло для душа, твердый кондиционер и шампунь -
+              база на палочке в ванной
+            </figcaption>
+          </figure>
+          <br /><br /><br />
+          <h3 class="blogBahil__content_title">
+            Сомневаетесь, что такой формат вам подойдёт?
+          </h3>
+          <br /><br />
+          <p class="blogBahil__content_text">
+            Можно попробовать мини-версии плиток по 20 граммов! Они представлены
+            в твёрдом наборе бренда «Это я» из дезодоранта, крема, шампуня и
+            кондиционера для волос. Так можно познакомиться с большинством
+            вариантов твёрдой косметики. Если заинтересовал конкретный продукт,
+            найти его.
+          </p>
+          <br /><br /><br />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__column">
+          <h2 class="footer__title">ECOsha</h2>
+          <li class="footer__list-item">Новинки</li>
+          <li class="footer__list-item">Коллекции</li>
+          <li class="footer__list-item">Магазины</li>
+          <li class="footer__list-item">Покупателям</li>
+        </div>
+        <div class="footer__column">
+          <h2 class="footer__title">Каталог</h2>
+          <li class="footer__list-item">Товары для дома</li>
+          <li class="footer__list-item">Аксессуары</li>
+          <li class="footer__list-item">Одежда</li>
+          <li class="footer__list-item">По мелочи</li>
+          <li class="footer__list-item">Забота о себе</li>
+        </div>
+        <div class="footer__column">
+          <h2 class="footer__title">О компании</h2>
+          <li class="footer__list-item">Правила доставки</li>
+          <li class="footer__list-item">Программа лояльности</li>
+          <li class="footer__list-item">Вопросы-ответы</li>
+          <li class="footer__list-item">Блог</li>
+          <li class="footer__list-item">Реквизиты</li>
+        </div>
+        <div class="footer__column">
+          <h2 class="footer__title">Сообщества ECOsha</h2>
+          <li class="footer__list-item">Telegram</li>
+          <li class="footer__list-item">WhatsApp</li>
+          <li class="footer__list-item">ВКонтакте</li>
+          <li class="footer__list-item">+7(999)888-99-99</li>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/swiper.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
+  </body>
+</html>

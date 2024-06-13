@@ -1,0 +1,107 @@
+.blogBahil {
+  font-family: "Montserrat";
+  &__image-container {
+  }
+  &__conent-img {
+    position: relative;
+  }
+  &__image {
+    height: 660px;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+    // position: absolute;
+  }
+  &__conent-img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 660px;
+    background: rgba(
+      0,
+      0,
+      0,
+      0.5
+    ); /* Цвет затемнения здесь - rgba(0, 0, 0, 0.5) */
+  }
+  &__label {
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    font-size: 52px;
+    color: white;
+    bottom: 200px;
+    position: absolute;
+    width: 1200px;
+    margin: auto;
+    left: 300px;
+    z-index: 10;
+  }
+
+  &__wrapper {
+    width: 760px;
+    margin: auto;
+  }
+
+  &__content {
+    &_text {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 28px;
+    }
+
+    &_figure {
+    }
+
+    &_image {
+      width: 760px;
+      height: 760px;
+      object-fit: cover;
+    }
+    &_figcaption {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 28px;
+    }
+    &_title {
+      line-height: 28px;
+      font-size: 26px;
+      font-weight: 700;
+    }
+  }
+}
+.blog-soap {
+ 
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+     margin-bottom: 40px;
+  }
+
+  &__img {
+    background-image: url(../../../../frontend/assets/img/img-blog/free-icon-check-mark-5290644.png);
+    width: 55px;
+    height: 55px;
+    background-size: cover;
+  }
+  &__img-container {
+  }
+  &__text {
+  }
+
+  &__title {
+    font-size: 17px;
+    line-height: 1.35;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+}

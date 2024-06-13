@@ -1,0 +1,65 @@
+.ecology {
+  height: 460px;
+  width: 100%;
+  margin-bottom: 50px;
+  &__container {
+    display: flex;
+  }
+}
+.square {
+  width: 460px;
+  background-color: #a8b57f;
+  height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  &__re {
+    color: #5d4f29;
+    font-size: 80px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__re-label {
+  }
+
+  &__re-stick {
+    background-color: #5d4f29;
+    width: 4px;
+    height: 300px;
+  }
+}
+
+.continuation-block {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+
+  &__expression {
+  }
+
+  &__design {
+    margin: 40px;
+  }
+
+  &__title {
+    color: #5d4f29;
+    font-size: 24px;
+    font-family: "Montserrat";
+    line-height: 1.25;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    color: #5d4f29;
+    font-size: 18px;
+    font-family: "Montserrat";
+    line-height: 1.45;
+    font-weight: 400;
+    width: 628px;
+  }
+}

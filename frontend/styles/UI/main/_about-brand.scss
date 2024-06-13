@@ -1,0 +1,112 @@
+.about-brand {
+  margin-top: 110px;
+  margin-bottom: 190px;
+  // height: fit-content;
+  &__container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 943px 1fr;
+    grid-template-rows: 591px 600px;
+  }
+  &__main {
+  }
+
+  &__title {
+    color: #3d351d;
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 32px;
+    max-width: 1724px;
+  }
+
+  &__subtitle {
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    text-align: center;
+     color: #74653b;
+    margin: 0 auto;
+    max-width: 1015px;
+  }
+
+  &__description-first {
+  }
+
+  &__description-concepts {
+  }
+
+  &__description-title {
+    font-size: 32px;
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    color: #3d351d;
+    margin: 0 0 16px 0;
+    overflow: hidden;
+    // text-overflow: ellipsis;
+    // white-space: nowrap;
+  }
+
+  &__description-subtitle {
+    font-family: "Geometria";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #6b6b6b;
+    margin: 0;
+  }
+
+  &__poster-first {
+    background-image: url('../../../../frontend/assets/img/eco-poster-2.jpeg');
+    width: 933px;
+    height: 943px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+
+  &__poster-second {
+    background-image: url('../../../../frontend/assets/img/eco-poster.jpeg');
+    //
+    width: 518px;
+    height: 702px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  &__description-second {
+    display: flex;
+    flex: 0 1 50%;
+    margin-top: 400px;
+    gap: 70px;
+    margin-left: -250px;
+  }
+}
+.eco-life {
+  padding: 0 20px 60px 100px;
+  max-width: 700px;
+}
+.about-us {
+  margin-left: auto;
+  padding-right: 80px;
+  padding-bottom: 100px;
+  // padding: 0 20px 100px 100px;
+  max-width: 600px;
+}
+.care {
+  width: 520px;
+}
+.zero-waste {
+  width: 520px;
+}

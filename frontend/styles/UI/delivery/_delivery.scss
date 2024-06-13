@@ -1,0 +1,65 @@
+.delivery {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-top: 50px;
+  max-width: 900px;
+  margin: auto;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  &__header {
+    font-size: 22px;
+    color: #412e1f;
+    font-weight: 700;
+    font-family: "Montserrat";
+    display: flex;
+  }
+
+  &__container {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Montserrat";
+    color: #412e1f;
+  }
+
+  &__label {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Montserrat";
+    color: #412e1f;
+  }
+}
+.payment {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  //   margin-left: 100px;
+  //   margin-right: 100px;
+  //   margin-bottom: 50px;
+  margin: auto;
+  max-width: 900px;
+  &__header {
+    font-size: 22px;
+    color: #412e1f;
+    font-weight: 700;
+    font-family: "Montserrat";
+  }
+
+  &__container {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Montserrat";
+    color: #412e1f;
+  }
+
+  &__bold-label {
+    font-weight: 600;
+  }
+}

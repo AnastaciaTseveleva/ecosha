@@ -1,0 +1,43 @@
+@import "./fonts";
+@import "./reset";
+@import "./styles";
+
+//wrapper
+@import "./UI/wrapper";
+//header
+@import "./UI/header/header";
+//menu
+@import "./UI/header/menu";
+//dropdown
+// @import "./UI/header/dropdown";
+//slider
+@import "./UI/header/image-slider";
+//auth
+@import "./UI/header/auth";
+
+//main
+@import "./UI/main/main";
+//new-items
+@import "./UI/main/new-items";
+//ecology
+@import "./UI/main/ecology";
+//about-brand
+@import "./UI/main/about-brand";
+//all-catalog
+@import "./UI/main/all-catalog";
+//footer
+@import "./UI/footer/footer";
+
+//delivery
+@import "./UI/delivery/delivery";
+
+@import "./UI/main-catalog/main-catalog";
+
+@import "./UI/catalogProduct/catalogProduct";
+
+@import "./UI/cart/cart";
+
+@import "./UI/buyers/buyers";
+
+@import "./UI/blog/blog";
+@import "./UI/blog/blogBahil";

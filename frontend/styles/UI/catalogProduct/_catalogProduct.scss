@@ -1,0 +1,151 @@
+.card-image {
+  &__container {
+    position: relative;
+    width: 420px;
+    height: 710px;
+  }
+
+  &__swiper {
+    height: 80%;
+    width: 100%;
+  }
+
+  &__slide {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.card-image__slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.card-image__swiper-two {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.card-image__swiper-two .card-image__slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.card-image__swiper-two .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.card-image__slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.catalogProduct__wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  gap: 50px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.card-info {
+  &__title {
+    font-size: 33px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    max-width: 500px;
+    margin-bottom: 100px;
+  }
+
+  &__price-container {
+    display: flex;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 24px;
+    color: #8f9d61;
+    gap: 10px;
+  }
+
+  &__price {
+  }
+
+  &__label {
+  }
+
+  &__btn-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+  }
+
+  &__add-cart {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #8f9d61;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    width: 150px;
+    height: 40px;
+    transition: background-color 0.3s;
+  }
+  &__add-cart:hover {
+    background-color: #a5b580; /* новый цвет при наведении */
+  }
+
+  &__icon {
+    background-image: url(../../../../frontend/assets/icons/menu-favorities.svg);
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+    display: block;
+    cursor: pointer;
+    transition: background-image 0.2s;
+  }
+  &__icon:hover {
+    background-image: url(../../../../frontend/assets/icons/menu-favorities-green.svg);
+    cursor: pointer;
+  }
+  &__subtitle-header {
+    margin-top: 50px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    font-family: "Montserrat";
+    font-weight: 350;
+    font-size: 15px;
+    max-width: 400px;
+    line-height: 25px;
+  }
+}
+
+.card-info__icon-active {
+  background-image: url(../../../../frontend/assets/icons/menu-favorities-active.svg);
+}
+
+.card-info__add-cart-active {
+    background-color: white;
+    color: black; 
+    border: 1px solid #8f9d61;/* новый цвет при наведении */
+  }

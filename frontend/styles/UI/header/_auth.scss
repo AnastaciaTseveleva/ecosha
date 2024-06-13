@@ -1,0 +1,222 @@
+.auth {
+  &__block {
+    position: absolute;
+    z-index: 11;
+    background-color: white;
+    margin-top: 20px;
+    right: 60px;
+    padding: 35px 27px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.32);
+    min-width: 250px;
+    transition: opacity 0.8s, visibility 0.6s;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &__block-container {
+    position: relative;
+  }
+
+  &__close {
+    display: flex;
+    justify-content: end;
+  }
+
+  &__close-icon {
+    background-image: url(../../../../frontend/assets/icons/m-close.webp);
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    display: block;
+    cursor: pointer;
+  }
+  &__title {
+    text-align: center;
+    font-family: "Montserrat";
+    font-weight: Bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8f9d61;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  &__line {
+    border-top: 1px solid #aeaeae;
+  }
+}
+.auth-form {
+  &__input {
+    color: gray;
+    padding-left: 10px;
+  }
+  &__input-conteiner {
+    display: flex;
+    // margin-bottom: 20px;
+  }
+
+  &__icon-conteiner {
+    display: flex;
+    background-color: #8f9d61;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px 0 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    width: 23px;
+    height: 23px;
+  }
+
+  &__input-section {
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  &__input {
+    border: 1px solid #8f9d61;
+    height: 40px;
+    width: 360px;
+    border-radius: 0 4px 4px 0;
+    outline: none;
+  }
+  &__input::placeholder {
+    color: gray;
+  }
+
+  &__passw-icon {
+    background-image: url(../../../../frontend/assets/icons/ic_password.webp);
+    background-size: contain;
+  }
+
+  &__passw {
+    font-family: "Montserrat";
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    color: #aeaeae;
+    cursor: pointer;
+  }
+  &__passw:hover {
+    color: #879e35;
+    text-decoration: underline;
+    text-decoration-color: #8f9d61;
+  }
+
+  &__slash {
+    color: #5f9d57;
+  }
+
+  &__register {
+    color: #8f9d61;
+    font-family: "Montserrat";
+    font-weight: normal;
+    font-size: 12px;
+    cursor: pointer;
+    line-height: 12px;
+  }
+  &__register:hover {
+    text-decoration: underline;
+    text-decoration-color: #8f9d61;
+  }
+  &__btn {
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #8f9d61;
+    color: white;
+    border: 0.5px solid #8f9d61;
+    height: 48px;
+    width: 180px;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+
+  &__name-icon {
+    background-image: url(../../../../frontend/assets/icons/ic_profile.webp);
+    background-size: contain;
+  }
+}
+.recovery {
+  &__subtitle {
+    width: 350px;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 17px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: 350;
+    margin-bottom: 10px;
+  }
+}
+
+.accaunt-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 7px;
+  align-items: center;
+  &__link {
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    width: fit-content;
+    position: relative;
+  }
+  &__link:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    background-color: #3e3c3c; /* Цвет подчеркивания */
+    height: 1px; /* Толщина подчеркивания */
+    width: 0;
+    transition: width 0.6s;
+  }
+  &__link:hover:after {
+    width: 100%;
+  }
+}
+.visible {
+  visibility: visible;
+  opacity: 1;
+}
+.tabBtn {
+  color: #8f9d61;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Montserrat";
+  margin-top: 10px;
+  display: block;
+  width: fit-content;
+}
+.tabBtn:hover {
+  text-decoration: underline;
+  text-decoration-color: #8f9d61;
+}
+
+///ошибка
+.field-err {
+  border: 1px solid rgb(237, 68, 68);
+}
+
+.err-message {
+  display: none;
+}
+
+.err-message-active {
+  color: rgb(237, 68, 68);
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 10px;
+  margin-left: 40px;
+  margin-top: 5px;
+  position: absolute;
+  display: block;
+}

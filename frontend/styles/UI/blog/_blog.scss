@@ -1,0 +1,59 @@
+.blog {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  &__wrapper {
+    margin: auto;
+    max-width: 1200px;
+    font-family: "Montserrat";
+  }
+
+  &__header {
+    font-weight: 700;
+    font-size: 40px;
+    width: 500px;
+    margin: auto;
+
+    padding-bottom: 60px;
+    text-align: center;
+    color: #4e5634;
+  }
+}
+.blog-template {
+  &__container {
+  }
+
+  &__template {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__card {
+    width: 360px;
+    height: 431px;
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 360px;
+    height: 276.922px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 20px;
+    line-height: 1.35;
+    font-weight: 600;
+  }
+
+  &__subtitle {
+    margin-top: 8px;
+    color: rgba(0, 0, 0, 0.9);
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: 300;
+  }
+}
